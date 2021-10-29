@@ -30,7 +30,7 @@ import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
  */
 class ScrollChildSwipeRefreshLayout @JvmOverloads constructor(
     context: Context,
-    attrs: AttributeSet? = null
+    attrs: AttributeSet? = null,
 ) : SwipeRefreshLayout(context, attrs) {
 
     var scrollUpChild: View? = null
