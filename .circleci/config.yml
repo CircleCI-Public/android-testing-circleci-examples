@@ -9,6 +9,7 @@ executors:
 
 jobs:
   unit-test:
+    name: Unit test
     executor: android-machine
     steps:
       - checkout
