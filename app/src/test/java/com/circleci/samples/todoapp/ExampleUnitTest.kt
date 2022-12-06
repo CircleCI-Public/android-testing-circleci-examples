@@ -20,4 +20,9 @@ class ExampleUnitTest {
     fun addition_shouldFail() {
         assertEquals(5, 2 + 2)
     }
+
+    @Test
+    fun addition_anotherFail() {
+        assertEquals(4, 1 + 1)
+    }
 }
