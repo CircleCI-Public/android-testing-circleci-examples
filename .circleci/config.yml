@@ -129,6 +129,16 @@ jobs:
           path: app/build/outputs/apk/release/app-release-unsigned.apk
 
 workflows:
+  devtools_regression_tests:
+    triggers:
+      - schedule:
+          cron: "* * * * *"
+          filters:
+            branches:
+              only:
+                - main
+    jobs:
+      - unit-test
   test-and-build:
     jobs:
       - unit-test
@@ -164,4 +174,3 @@ workflows:
           filters:
             branches:
               only: main # Commits to main branch
-
