@@ -6,9 +6,9 @@ orbs:
 
 jobs:
   unit-test:
-    executor:
-      name: android/android-machine
-      resource-class: xlarge
+    docker: 
+      - image: androidsdk/android-30  
+    parallelism: 35
     steps:
       - checkout
       - android/restore-gradle-cache
